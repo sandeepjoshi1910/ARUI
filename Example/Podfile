@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ARUI_Example' do
+  pod 'ARUI', :path => '../'
+
+  target 'ARUI_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
