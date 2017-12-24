@@ -1,0 +1,22 @@
+{
+  "name": "ARUI",
+  "version": "0.1.0",
+  "summary": "ARUI helps create an AR UI",
+  "description": "ARUI Library.",
+  "homepage": "https://github.com/sandeepjoshi1910/ARUI",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "sandeepjoshi1910": "aw.snjoshi@hotmail.com"
+  },
+  "source": {
+    "git": "https://github.com/sandeepjoshi1910/ARUI.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source_files": "ARUI/Classes/**/*"
+}

@@ -1,0 +1,710 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62F298CBD834F6F5F08AD43365725AEF /* Pods-ARUI_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A114D284FE3F1627F33454204CFD7F27 /* Pods-ARUI_Example-dummy.m */; };
+		643AFEE9A0BF30C9D288FDB69A81E36B /* Pods-ARUI_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 53C9AA9DD73DB7847275FEA75283989B /* Pods-ARUI_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66F0046454E91EF890AF4BCBD85E2A19 /* ARUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 013BE071B5EC9693FAF440E1578208B4 /* ARUI-dummy.m */; };
+		911A7A0BEADAC2B065887D966471F5E4 /* Pods-ARUI_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE37639FE61502699B4B800558D48041 /* Pods-ARUI_Tests-dummy.m */; };
+		9647153BFAEC3050BBE660B1604F8D8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		BE98C84ABE6AB307F595A994B6E04BF5 /* ARUIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E217C2E3D125D08597EBD3EE83D39A0 /* ARUIHandler.swift */; };
+		D75E99667816BDC5FA982C03E482222B /* ARUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A79198CEF8755B274984EF2A00700353 /* ARUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB6C68812A44F33FE7D9BF1721C4DD63 /* Pods-ARUI_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DD8E800ECEB13D97F752D023063505D /* Pods-ARUI_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE9238314EF12F997F46915A44E7D3EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		F27A502D881916EC23E6E7E238E572D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0894D15850DB86625BA89DDB2813438 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F6AA031D917B8AC00A52BFC504BF26C;
+			remoteInfo = ARUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		012FA9FB3D80BB1182500A6E461697D7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		013BE071B5EC9693FAF440E1578208B4 /* ARUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ARUI-dummy.m"; sourceTree = "<group>"; };
+		0E217C2E3D125D08597EBD3EE83D39A0 /* ARUIHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ARUIHandler.swift; path = ARUI/Classes/ARUIHandler.swift; sourceTree = "<group>"; };
+		0F0500F8C609E13ACD3B1183A820DE28 /* Pods-ARUI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARUI_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		0FC8B7AC181BD226227729F73D787133 /* Pods-ARUI_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ARUI_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		131A5B8672C41B416C51580E8DE9FA98 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1368E2755777E9D9156E82322FF5EDD9 /* Pods_ARUI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ARUI_Tests.framework; path = "Pods-ARUI_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20BAF0B1018247BAFCDED241291E2395 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2619AA4AE4F97BA27C744BC86DD06CF6 /* Pods-ARUI_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ARUI_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2DF893718864CBD1C8FA96BB1A5CC7DA /* ARUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ARUI.modulemap; sourceTree = "<group>"; };
+		42C29342AA4F74A7F4E1CD7C001E33E8 /* Pods-ARUI_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ARUI_Example.modulemap"; sourceTree = "<group>"; };
+		53C9AA9DD73DB7847275FEA75283989B /* Pods-ARUI_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ARUI_Example-umbrella.h"; sourceTree = "<group>"; };
+		5A65A406D097BA6D4795508EE3843069 /* Pods-ARUI_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ARUI_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6C29173BE1FC6CF7CF7605C1C448E3F4 /* Pods-ARUI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARUI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		6DD0CBB3C34A2ECB3D9F2C6A3C22C74E /* ARUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARUI-prefix.pch"; sourceTree = "<group>"; };
+		7CFD60C468E88E1DBC75E4118E23142E /* Pods-ARUI_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ARUI_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		8DD8E800ECEB13D97F752D023063505D /* Pods-ARUI_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ARUI_Tests-umbrella.h"; sourceTree = "<group>"; };
+		91F431DE987EE7685F3A068030910310 /* Pods_ARUI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ARUI_Example.framework; path = "Pods-ARUI_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93BA405A2BA3AF48D984C34BAE1864EA /* ARUI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARUI.xcconfig; sourceTree = "<group>"; };
+		94936E4EE81A4C2D64E4A77D75B10B77 /* Pods-ARUI_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ARUI_Example-frameworks.sh"; sourceTree = "<group>"; };
+		94E7723235D8CB795BCF6427C68D7E86 /* Pods-ARUI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARUI_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A114D284FE3F1627F33454204CFD7F27 /* Pods-ARUI_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ARUI_Example-dummy.m"; sourceTree = "<group>"; };
+		A193C7905393E4661CAC8B16B7F46560 /* Pods-ARUI_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ARUI_Tests.modulemap"; sourceTree = "<group>"; };
+		A79198CEF8755B274984EF2A00700353 /* ARUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARUI-umbrella.h"; sourceTree = "<group>"; };
+		B4DC8F2BF9CBAB9D4A35E90ACB8946F1 /* Pods-ARUI_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ARUI_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		C498732E4F5C8D1249A361AAB37FD5F3 /* ARUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ARUI.framework; path = ARUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C66610545AEB96D2B6983236E1D211BA /* Pods-ARUI_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ARUI_Example-resources.sh"; sourceTree = "<group>"; };
+		DBDC528CC904CD855145DC23F3796ED0 /* Pods-ARUI_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ARUI_Tests-resources.sh"; sourceTree = "<group>"; };
+		F8B71DB0A00D9AA7052961DE12174FB0 /* Pods-ARUI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARUI_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FE37639FE61502699B4B800558D48041 /* Pods-ARUI_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ARUI_Tests-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01D0B76E7EF4E2FD13C4A6BF9FB6C87F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F27A502D881916EC23E6E7E238E572D5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		672FA4EFA87E50DE7173B27054750137 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9647153BFAEC3050BBE660B1604F8D8B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B681320E07D5108EB63327CA8EE43394 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE9238314EF12F997F46915A44E7D3EE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		167340A93C244C2E364A98CB665495AC /* Pods-ARUI_Example */ = {
+			isa = PBXGroup;
+			children = (
+				131A5B8672C41B416C51580E8DE9FA98 /* Info.plist */,
+				42C29342AA4F74A7F4E1CD7C001E33E8 /* Pods-ARUI_Example.modulemap */,
+				2619AA4AE4F97BA27C744BC86DD06CF6 /* Pods-ARUI_Example-acknowledgements.markdown */,
+				7CFD60C468E88E1DBC75E4118E23142E /* Pods-ARUI_Example-acknowledgements.plist */,
+				A114D284FE3F1627F33454204CFD7F27 /* Pods-ARUI_Example-dummy.m */,
+				94936E4EE81A4C2D64E4A77D75B10B77 /* Pods-ARUI_Example-frameworks.sh */,
+				C66610545AEB96D2B6983236E1D211BA /* Pods-ARUI_Example-resources.sh */,
+				53C9AA9DD73DB7847275FEA75283989B /* Pods-ARUI_Example-umbrella.h */,
+				94E7723235D8CB795BCF6427C68D7E86 /* Pods-ARUI_Example.debug.xcconfig */,
+				F8B71DB0A00D9AA7052961DE12174FB0 /* Pods-ARUI_Example.release.xcconfig */,
+			);
+			name = "Pods-ARUI_Example";
+			path = "Target Support Files/Pods-ARUI_Example";
+			sourceTree = "<group>";
+		};
+		556B0C3149C72C671ABBE95E4B9AA5B2 /* ARUI */ = {
+			isa = PBXGroup;
+			children = (
+				0E217C2E3D125D08597EBD3EE83D39A0 /* ARUIHandler.swift */,
+				8B4D7C8F7582D7416FA8A245919FEBE0 /* Support Files */,
+			);
+			name = ARUI;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		591D191DED99C281454A144CA31A0349 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C498732E4F5C8D1249A361AAB37FD5F3 /* ARUI.framework */,
+				91F431DE987EE7685F3A068030910310 /* Pods_ARUI_Example.framework */,
+				1368E2755777E9D9156E82322FF5EDD9 /* Pods_ARUI_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CC2FBC50F3630D6DFBAABDAB1F4ACA2 /* Pods-ARUI_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				20BAF0B1018247BAFCDED241291E2395 /* Info.plist */,
+				A193C7905393E4661CAC8B16B7F46560 /* Pods-ARUI_Tests.modulemap */,
+				5A65A406D097BA6D4795508EE3843069 /* Pods-ARUI_Tests-acknowledgements.markdown */,
+				0FC8B7AC181BD226227729F73D787133 /* Pods-ARUI_Tests-acknowledgements.plist */,
+				FE37639FE61502699B4B800558D48041 /* Pods-ARUI_Tests-dummy.m */,
+				B4DC8F2BF9CBAB9D4A35E90ACB8946F1 /* Pods-ARUI_Tests-frameworks.sh */,
+				DBDC528CC904CD855145DC23F3796ED0 /* Pods-ARUI_Tests-resources.sh */,
+				8DD8E800ECEB13D97F752D023063505D /* Pods-ARUI_Tests-umbrella.h */,
+				6C29173BE1FC6CF7CF7605C1C448E3F4 /* Pods-ARUI_Tests.debug.xcconfig */,
+				0F0500F8C609E13ACD3B1183A820DE28 /* Pods-ARUI_Tests.release.xcconfig */,
+			);
+			name = "Pods-ARUI_Tests";
+			path = "Target Support Files/Pods-ARUI_Tests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				C50AF737A5AD3E827E279A760FC2DF76 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				591D191DED99C281454A144CA31A0349 /* Products */,
+				9CB0EF491AFC259A4F0BB75FE9F9CE5A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8B4D7C8F7582D7416FA8A245919FEBE0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2DF893718864CBD1C8FA96BB1A5CC7DA /* ARUI.modulemap */,
+				93BA405A2BA3AF48D984C34BAE1864EA /* ARUI.xcconfig */,
+				013BE071B5EC9693FAF440E1578208B4 /* ARUI-dummy.m */,
+				6DD0CBB3C34A2ECB3D9F2C6A3C22C74E /* ARUI-prefix.pch */,
+				A79198CEF8755B274984EF2A00700353 /* ARUI-umbrella.h */,
+				012FA9FB3D80BB1182500A6E461697D7 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ARUI";
+			sourceTree = "<group>";
+		};
+		9CB0EF491AFC259A4F0BB75FE9F9CE5A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				167340A93C244C2E364A98CB665495AC /* Pods-ARUI_Example */,
+				6CC2FBC50F3630D6DFBAABDAB1F4ACA2 /* Pods-ARUI_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C50AF737A5AD3E827E279A760FC2DF76 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				556B0C3149C72C671ABBE95E4B9AA5B2 /* ARUI */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0D4DB463FEDA4291D1F7F5B8DDC03402 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D75E99667816BDC5FA982C03E482222B /* ARUI-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35283D34940B651625F7B6BF596E199B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				643AFEE9A0BF30C9D288FDB69A81E36B /* Pods-ARUI_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7287AD48CBB96FC61F160C1657C18D2C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB6C68812A44F33FE7D9BF1721C4DD63 /* Pods-ARUI_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0F6AA031D917B8AC00A52BFC504BF26C /* ARUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7964C6A791B72E8470458EF4437C096A /* Build configuration list for PBXNativeTarget "ARUI" */;
+			buildPhases = (
+				E063C49F8E51ABDB53646C879BE986CD /* Sources */,
+				672FA4EFA87E50DE7173B27054750137 /* Frameworks */,
+				0D4DB463FEDA4291D1F7F5B8DDC03402 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARUI;
+			productName = ARUI;
+			productReference = C498732E4F5C8D1249A361AAB37FD5F3 /* ARUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3E18C817F933A2DCF9296BCC9B2F3BCA /* Pods-ARUI_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A2432EB0BE0EB5A31FE5DDEE60CFAF6 /* Build configuration list for PBXNativeTarget "Pods-ARUI_Tests" */;
+			buildPhases = (
+				E74DA6609ECE8CBFF76966F6C2483734 /* Sources */,
+				01D0B76E7EF4E2FD13C4A6BF9FB6C87F /* Frameworks */,
+				7287AD48CBB96FC61F160C1657C18D2C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ARUI_Tests";
+			productName = "Pods-ARUI_Tests";
+			productReference = 1368E2755777E9D9156E82322FF5EDD9 /* Pods_ARUI_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		709AB3E2F6AF9BCA46F27DB682D4BAFA /* Pods-ARUI_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 313117CE8CC0A3D158C675259692E037 /* Build configuration list for PBXNativeTarget "Pods-ARUI_Example" */;
+			buildPhases = (
+				A7FE84FD0F6C4E2081A9A04A48F8B27C /* Sources */,
+				B681320E07D5108EB63327CA8EE43394 /* Frameworks */,
+				35283D34940B651625F7B6BF596E199B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				978F8EF3A79D5C6A8E0D205579BF3CE2 /* PBXTargetDependency */,
+			);
+			name = "Pods-ARUI_Example";
+			productName = "Pods-ARUI_Example";
+			productReference = 91F431DE987EE7685F3A068030910310 /* Pods_ARUI_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 591D191DED99C281454A144CA31A0349 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F6AA031D917B8AC00A52BFC504BF26C /* ARUI */,
+				709AB3E2F6AF9BCA46F27DB682D4BAFA /* Pods-ARUI_Example */,
+				3E18C817F933A2DCF9296BCC9B2F3BCA /* Pods-ARUI_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7FE84FD0F6C4E2081A9A04A48F8B27C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62F298CBD834F6F5F08AD43365725AEF /* Pods-ARUI_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E063C49F8E51ABDB53646C879BE986CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66F0046454E91EF890AF4BCBD85E2A19 /* ARUI-dummy.m in Sources */,
+				BE98C84ABE6AB307F595A994B6E04BF5 /* ARUIHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E74DA6609ECE8CBFF76966F6C2483734 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				911A7A0BEADAC2B065887D966471F5E4 /* Pods-ARUI_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		978F8EF3A79D5C6A8E0D205579BF3CE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ARUI;
+			target = 0F6AA031D917B8AC00A52BFC504BF26C /* ARUI */;
+			targetProxy = F0894D15850DB86625BA89DDB2813438 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12C4B864767C59600DBFA238F1E2F8BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		145162F07982C66816AA0C7E19AD5E3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C29173BE1FC6CF7CF7605C1C448E3F4 /* Pods-ARUI_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ARUI_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ARUI_Tests/Pods-ARUI_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ARUI_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		59F0302F2371FCC6B73EF0A418D40734 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6832A72FC307AFB2568234C550D33DED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94E7723235D8CB795BCF6427C68D7E86 /* Pods-ARUI_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ARUI_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ARUI_Example/Pods-ARUI_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ARUI_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7F7BAE228D4449DEFC9D740FE67B2A45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F0500F8C609E13ACD3B1183A820DE28 /* Pods-ARUI_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ARUI_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ARUI_Tests/Pods-ARUI_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ARUI_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8AEBFE2DF8064074E08A9985D52DC520 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8B71DB0A00D9AA7052961DE12174FB0 /* Pods-ARUI_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ARUI_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ARUI_Example/Pods-ARUI_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ARUI_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BAE5FA0909D3F824905397F45FC3563C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93BA405A2BA3AF48D984C34BAE1864EA /* ARUI.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ARUI/ARUI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ARUI/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ARUI/ARUI.modulemap";
+				PRODUCT_NAME = ARUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BC4E04A997B4A46793EE64EE9A182DAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93BA405A2BA3AF48D984C34BAE1864EA /* ARUI.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ARUI/ARUI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ARUI/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ARUI/ARUI.modulemap";
+				PRODUCT_NAME = ARUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59F0302F2371FCC6B73EF0A418D40734 /* Debug */,
+				12C4B864767C59600DBFA238F1E2F8BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		313117CE8CC0A3D158C675259692E037 /* Build configuration list for PBXNativeTarget "Pods-ARUI_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6832A72FC307AFB2568234C550D33DED /* Debug */,
+				8AEBFE2DF8064074E08A9985D52DC520 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7964C6A791B72E8470458EF4437C096A /* Build configuration list for PBXNativeTarget "ARUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC4E04A997B4A46793EE64EE9A182DAB /* Debug */,
+				BAE5FA0909D3F824905397F45FC3563C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A2432EB0BE0EB5A31FE5DDEE60CFAF6 /* Build configuration list for PBXNativeTarget "Pods-ARUI_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				145162F07982C66816AA0C7E19AD5E3E /* Debug */,
+				7F7BAE228D4449DEFC9D740FE67B2A45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
