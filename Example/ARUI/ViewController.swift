@@ -13,6 +13,41 @@ import SceneKit
 
 class ViewController: UIViewController, ARSCNViewDelegate, ARUIDelegateProtocol {
     
+    
+    func textResourceFor(restorationId: String) -> ARUITextInfo? {
+        
+        switch restorationId {
+        case "placeName":
+            let textInfo = ARUITextInfo(textString: "Colosseum", color: UIColor.blue, font: "Arial")
+            return textInfo
+            
+        case "builtIn":
+            let textInfo = ARUITextInfo(textString: "Built in: 70–80 AD", color: UIColor.black, font: "Arial")
+            return textInfo
+            
+        case "located":
+            let textInfo = ARUITextInfo(textString: "Located: city of Rome, Italy", color: UIColor.black, font: "Arial")
+            return textInfo
+            
+        case "capacity":
+            let textInfo = ARUITextInfo(textString: "Capacity: Estimated between 50,000 and 80,000 ", color: UIColor.black, font: "Arial")
+            return textInfo
+            
+        case "builtBy":
+            let textInfo = ARUITextInfo(textString: "Built by: Emperor Vespasian & Emperor Titus", color: UIColor.black, font: "Arial")
+            return textInfo
+            
+        default:
+            break
+        }
+        
+        let textInfo = ARUITextInfo(textString: "Augmented Reality", color: UIColor.blue, font: "Menlo")
+        return textInfo
+    }
+    
+    
+    
+    
     @IBOutlet weak var sceneView: ARSCNView!
     // MARK: - ARSCNViewDelegate
     
@@ -38,12 +73,25 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARUIDelegateProtocol 
     }
     
     func imageResourceFor(restorationId: String) -> UIImage? {
-        return UIImage(named: "AR")
+        var image = UIImage()
+        switch restorationId {
+            case "icon":
+                image =  UIImage(named: "cicon")!
+            case "image1":
+                image =  UIImage(named: "image1")!
+            case "image2":
+                image =  UIImage(named: "image2")!
+            case "image3":
+                image =  UIImage(named: "image3")!
+            case "image4":
+                image =  UIImage(named: "image4")!
+            default:
+                break
+        }
+        return image
     }
     
-    func textResourceFor(restorationId: String) -> String? {
-        return "Augmented Reality"
-    }
+  
     
     func buttonTextFor(restorationId: String) -> String? {
         return "Click Me!"
@@ -56,13 +104,30 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARUIDelegateProtocol 
         sceneView.delegate = self
         sceneView.showsStatistics = true
         
-        
+        let ARH : ARUIHandler = ARUIHandler(nibName: "ExampleUI", delegate: self, scnView: sceneView, arViewWidth: 14.0, arViewDepth: -20.0)
+        ARH.panelColor = UIColor(red: 72/255.0, green: 201/255.0, blue: 176/255.0, alpha: 0.8)
+        ARH.drawARUI()
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // Create a session configuration
+        let configuration = ARWorldTrackingConfiguration()
+        // Run the view's session
+        sceneView.session.run(configuration)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        // Pause the view's session
+        sceneView.session.pause()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        // Release any cached data, images, etc that aren't in use.
     }
+
 
 }
 

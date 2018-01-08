@@ -9,7 +9,7 @@
 import UIKit
 import ARKit
 
-class ARUIHandler: NSObject {
+open class ARUIHandler: NSObject {
     
     var delegate     : ARUIDelegateProtocol?
     var sceneView    : ARSCNView?
@@ -19,7 +19,9 @@ class ARUIHandler: NSObject {
     var ARViewDepth  : CGFloat?
     var ARScaling    : CGFloat?
     
-    init(nibName: String, delegate: ARUIDelegateProtocol, scnView: ARSCNView, arViewWidth: Float, arViewDepth: Float) {
+    public var panelColor : UIColor? = UIColor(red: 0/255.0, green: 43/255.0, blue: 54/255.0, alpha: 0.8)
+    
+    public init(nibName: String, delegate: ARUIDelegateProtocol, scnView: ARSCNView, arViewWidth: Float, arViewDepth: Float) {
         super.init()
         self.nibFileName = nibName
         self.delegate    = delegate
@@ -28,7 +30,7 @@ class ARUIHandler: NSObject {
         self.ARViewDepth = CGFloat(arViewDepth)
     }
     
-    func drawARUI() {
+    public func drawARUI() {
         
         let parentView : UIView = Bundle.main.loadNibNamed(self.nibFileName!, owner: nil, options: nil)?.last as! UIView
         let UIviewWidth  = CGFloat(parentView.frame.width)
@@ -57,15 +59,15 @@ class ARUIHandler: NSObject {
                 
             case "UIImageView":
                 let image = delegate?.imageResourceFor(restorationId: view.restorationIdentifier!)
-                addARNodeToView(isImgNode: true, isButton: false, width: view.frame.width, height: view.frame.height, x: view.frame.origin.x, y: view.frame.origin.y, image: image, text: nil)
+                addARNodeToView(isImgNode: true, isButton: false, width: view.frame.width, height: view.frame.height, x: view.frame.origin.x, y: view.frame.origin.y, image: image, text: nil, textInfo: nil)
                 break
             case "UILabel":
-                let text : String = (delegate?.textResourceFor(restorationId: view.restorationIdentifier!))!
-                addARNodeToView(isImgNode: false, isButton: false, width: view.frame.width, height: view.frame.height, x: view.frame.origin.x, y: view.frame.origin.y, image: nil, text: text)
+                let text : ARUITextInfo = (delegate?.textResourceFor(restorationId: view.restorationIdentifier!))!
+                addARNodeToView(isImgNode: false, isButton: false, width: view.frame.width, height: view.frame.height, x: view.frame.origin.x, y: view.frame.origin.y, image: nil, text: nil, textInfo: text)
                 break
             case "UIButton":
                 let text : String = (delegate?.buttonTextFor(restorationId: view.restorationIdentifier!))!
-                addARNodeToView(isImgNode: false, isButton: true, width: view.frame.width, height: view.frame.height, x: view.frame.origin.x, y: view.frame.origin.y, image: nil, text: text)
+                addARNodeToView(isImgNode: false, isButton: true, width: view.frame.width, height: view.frame.height, x: view.frame.origin.x, y: view.frame.origin.y, image: nil, text: text, textInfo: nil)
                 break
                 
             default:
@@ -87,13 +89,13 @@ class ARUIHandler: NSObject {
             let mPlane : SCNPlane = SCNPlane(width: width, height: height)
             mPlane.firstMaterial?.isDoubleSided = true
             mPlane.cornerRadius = 0.3
-            mPlane.firstMaterial?.diffuse.contents = UIColor(red: 0/255.0, green: 43/255.0, blue: 54/255.0, alpha: 0.8)
+            mPlane.firstMaterial?.diffuse.contents = panelColor!
             return mPlane
         }()
         return mainPlane
     }
     
-    private func addARNodeToView(isImgNode: Bool, isButton: Bool, width: CGFloat, height: CGFloat, x: CGFloat, y: CGFloat, image: UIImage?, text: String?) {
+    private func addARNodeToView(isImgNode: Bool, isButton: Bool, width: CGFloat, height: CGFloat, x: CGFloat, y: CGFloat, image: UIImage?, text: String?, textInfo: ARUITextInfo?) {
         
         let scaledWidth : CGFloat  = self.ARScaling! * width
         let scaledHeight : CGFloat = self.ARScaling! * height
@@ -111,16 +113,20 @@ class ARUIHandler: NSObject {
             
         } else {
             
-            let tNode = getTextNodeFor(text: text!, height: scaledHeight, width: scaledWidth)
-            sceneView?.scene.rootNode.addChildNode(tNode)
-            
-            let xPosition = CGFloat(-(ARViewWidth!/2.0) + scaledX)
-            
             if(isButton) {
+                let tNode = getTextNodeFor(text: text!, height: scaledHeight, width: scaledWidth)
+                sceneView?.scene.rootNode.addChildNode(tNode)
+                
+                let xPosition = CGFloat(-(ARViewWidth!/2.0) + scaledX)
                 // Button has to be center aligned but text need not be...
                 tNode.position = SCNVector3( xPosition - scaledWidth/2.0, CGFloat(-1.5 + ARViewHeight!/2.0 - scaledY), CGFloat(self.ARViewDepth!))
             } else {
+                let tNode = getTextNodeFor(textInfo: textInfo!, height: scaledHeight, width: scaledWidth)
+                sceneView?.scene.rootNode.addChildNode(tNode)
+                tNode.geometry?.firstMaterial?.diffuse.contents = textInfo?.textColor
+                let xPosition = CGFloat(-(ARViewWidth!/2.0) + scaledX)
                 tNode.position = SCNVector3(xPosition, CGFloat(-1.5 + ARViewHeight!/2.0 - scaledY), CGFloat(self.ARViewDepth!))
+                tNode.position.z = tNode.position.z + 0.05
             }
         }
     }
@@ -137,26 +143,39 @@ class ARUIHandler: NSObject {
     
     private func getTextNodeFor(text: String, height: CGFloat, width: CGFloat) -> SCNNode {
         
-        let textPlane = SCNPlane(width: width, height: height)
-        let planeNode = SCNNode(geometry: textPlane)
         let tex = SCNText(string: text, extrusionDepth: 0.04)
         tex.font = UIFont(name: "Arial", size: 0.5)
         tex.isWrapped = true
         
-        let textMaterial = SCNMaterial()
-        textMaterial.diffuse.contents = tex
-        planeNode.geometry?.materials = [textMaterial]
         let textNode = SCNNode(geometry: tex)
-        textNode.addChildNode(planeNode)
         return textNode
     }
     
+    private func getTextNodeFor(textInfo: ARUITextInfo, height: CGFloat, width: CGFloat) -> SCNNode {
+        let text = SCNText(string: textInfo.text!, extrusionDepth: 0.04)
+        text.font = UIFont(name: textInfo.font!, size: 0.5)
+        let textNode = SCNNode(geometry: text)
+        return textNode
+    }
 }
 
 
 public protocol ARUIDelegateProtocol {
     func imageResourceFor(restorationId: String) -> UIImage?
-    func textResourceFor(restorationId: String)  -> String?
+    func textResourceFor(restorationId: String)  -> ARUITextInfo?
     func buttonTextFor(restorationId: String)    -> String?
+}
+
+open class ARUITextInfo: NSObject {
+    
+    var text: String?
+    var textColor: UIColor?
+    var font: String?
+    
+    public init(textString: String, color: UIColor, font: String) {
+        self.text = textString
+        self.textColor = color
+        self.font = font
+    }
 }
 

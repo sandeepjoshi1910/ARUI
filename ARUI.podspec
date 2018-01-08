@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ARUI'
   s.version          = '0.1.0'
-  s.summary          = 'ARUI helps create an AR UI'
+  s.summary          = 'ARUI helps create an AR UI from an Xib file'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,10 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-ARUI Library.
+  ARUI is a library which helps to create an Augmented Reality UI with ease. Develoeprs need to spend time in handling all the 
+  ARkit specific details and sceneKit related code to setup an AR UI and then worry about the positioning and sizing the UI elements
+  in AR. This library lets the developer specify a UI in the form of an Xib file and then parses the Xib file and creates an AR UI
+  by resizing all the UI elements and arranging them to their relative positions in AR.
                        DESC
 
   s.homepage         = 'https://github.com/sandeepjoshi1910/ARUI'
