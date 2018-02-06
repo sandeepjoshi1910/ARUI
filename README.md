@@ -12,12 +12,16 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Requirements
 Swift 4 and the latest Xcode
 
-## Example Project Images
-https://github.com/sandeepjoshi1910/ARUI/blob/master/Example/ARUI/arUI.gif
+## Example Project Images/GIFs
 
-https://github.com/sandeepjoshi1910/ARUI/blob/master/Example/ARUI/Screen%20Shot%202018-01-08%20at%201.31.00%20PM.png
+### Example App Demo
+![Alt Text](https://github.com/sandeepjoshi1910/ARUI/blob/master/Example/ARUI/arUI.gif)
 
-https://github.com/sandeepjoshi1910/ARUI/blob/master/Example/ARUI/IMG_0634.png
+### The Xib file which is parsed to create the UI
+![Alt Text](https://github.com/sandeepjoshi1910/ARUI/blob/master/Example/ARUI/Screen%20Shot%202018-01-08%20at%201.31.00%20PM.png)
+
+### Example App Screenshot
+![Alt Text](https://github.com/sandeepjoshi1910/ARUI/blob/master/Example/ARUI/IMG_0634.png)
 
 
 
