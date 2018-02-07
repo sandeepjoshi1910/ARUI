@@ -62,7 +62,7 @@ pod 'ARUI'
 
 #### Sample code for delegate methods(You can also find all the code in example project) - 
 
-```
+``` swift
 func textResourceFor(restorationId: String) -> ARUITextInfo? {
         
         switch restorationId {
@@ -95,7 +95,7 @@ func textResourceFor(restorationId: String) -> ARUITextInfo? {
     }
 ```
 
-```
+``` swift
 func imageResourceFor(restorationId: String) -> UIImage? {
         var image = UIImage()
         switch restorationId {
@@ -136,7 +136,7 @@ func imageResourceFor(restorationId: String) -> UIImage? {
 
 • A sample code below illustrates that - 
 
-```
+``` swift
 let ARH : ARUIHandler = ARUIHandler(nibName: "ExampleUI", delegate: self, scnView: sceneView, arViewWidth: 14.0, arViewDepth: -20.0)
  ARH.panelColor = UIColor(red: 72/255.0, green: 201/255.0, blue: 176/255.0, alpha: 0.8)
  ARH.drawARUI()
