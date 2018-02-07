@@ -5,6 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/ARUI.svg?style=flat)](http://cocoapods.org/pods/ARUI)
 [![Platform](https://img.shields.io/cocoapods/p/ARUI.svg?style=flat)](http://cocoapods.org/pods/ARUI)
 
+## What is ARUI?
+While building an Augmented Reality app in iOS, develoeprs need to spend time in handling all the ARkit specific details and sceneKit related code to setup an AR UI and then worry about the positioning and sizing the UI elements in AR. This library lets the developer specify a UI in the form of an Xib file and then parses the Xib file and creates an AR UI by resizing all the UI elements and arranging them to their relative positions in AR.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
